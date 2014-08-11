@@ -37,56 +37,89 @@
 </nav>
 
 <center>
-  <h1> RPI Rugby Men </h1>
+  <h1> RPI Rugby Women </h1>
   <div class="container">
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#tab_a" data-toggle="tab">Men Home</a></li>
+  <li class="active"><a href="#tab_a" data-toggle="tab">Women Home</a></li>
   <li><a href="#tab_b" data-toggle="tab">Schedule</a></li>
   <li><a href="#tab_c" data-toggle="tab">Roster</a></li>
   <li><a href="#tab_d" data-toggle="tab">Pictures</a></li>
 </ul>
 <div class="tab-content">
         <div class="tab-pane active" id="tab_a">
-            <h4>RPI Men Home</h4>
-            <img>
-              <img class="img.center" src="scrum syracuse.jpg" alt="scrum syracuse.jpg">
-            </img>
-            <p> The RPI Men's Rugby Team currently competes in the Tri State Division which competes with local area teams in New York, New Jersey, and Connecticut.  In the past RPI has won a Division 1 New York State Championship.</p>
+            <h4>RPI Women Home</h4>
+            
+            <p>text</p>
         </div>
         <div class="tab-pane" id="tab_b">
-            <h4>Schedule</h4>
+            <h4>Pane B</h4>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
                 ac turpis egestas.</p>
         </div>
         <div class="tab-pane" id="tab_c">
-            <h4>Roster</h4>
+            <h4>Pane C</h4>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
                 ac turpis egestas.</p>
         </div>
         <div class="tab-pane" id="tab_d">
-            <h4>Pictures</h4>
+            <h4>Pane D</h4>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
                 ac turpis egestas.</p>
         </div>
   </div><!-- tab content -->
   </div><!-- end of container -->
-  
+
+  <ul class="nav nav-tabs">
+    <li><a href="#a" data-toggle="tab">a</a></li>
+    <li><a href="#b" data-toggle="tab">b</a></li>
+    <li><a href="#c" data-toggle="tab">c</a></li>
+    <li><a href="#d" data-toggle="tab">d</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="a">...</div>
+    <div class="tab-pane" id="b">...</div>
+    <div class="tab-pane" id="c">...</div>
+    <div class="tab-pane" id="d">...</div>
+  </div>
   </center>  
+  
     <script>
         $(document).ready(function () {
          $('.dropdown-toggle').dropdown();
         });
     </script>
-    <script type="text/javascript">
-      jQuery(document).ready(function ($) {
-        $('#tabs').tab();
-      });
-    </script>    
+    <script>
+      $('#tab_a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    </script>
+
+    <script>
+      $('#tab_b').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    </script>
+    <script>
+      $('#tab_c').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    </script>
+    <script>
+      $('#tab_d').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
   </body>
 
